@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- SETTINGS -->
+    <string name="close">Close</string>
+    <string name="toast">Toast</string>
+    <string name="background">Background</string>
+    <string name="button_color">Button Color</string>
+    <string name="hide_button">Hide Button</string>
+</resources>

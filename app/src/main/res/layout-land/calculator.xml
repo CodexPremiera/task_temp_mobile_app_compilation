@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app03_calculator.CalculatorActivity"
+    android:background="@color/background_gray">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:maxLines="1"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:id="@+id/text_expression"
+            android:textColor="@color/text_black"
+            android:textAlignment="textEnd"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/text_answer"
+            android:layout_below="@id/text_expression"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:ellipsize="start"
+            android:gravity="end"
+            android:textColor="@color/text_gray"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text=""/>
+
+    </RelativeLayout>
+
+
+    <!-- BUTTON GRID -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/basic_buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp">
+
+        <RelativeLayout
+            android:id="@+id/clear_buttons"
+            android:layout_below="@id/clear_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <include layout="@layout/calculator_clear_buttons"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/number_buttons"
+            android:layout_below="@id/clear_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <include layout="@layout/calculator_number_buttons"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@id/number_buttons">
+
+            <include layout="@layout/calculator_sign_buttons" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scientific_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/basic_buttons">
+
+        <include layout="@layout/calculator_scientific_buttons" />
+    </RelativeLayout>
+
+</RelativeLayout>

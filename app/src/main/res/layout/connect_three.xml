@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app05_connect_three.ConnectThreeActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_dock_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp">
+
+        <include layout="@layout/connect_three_top_dock" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttons_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <include layout="@layout/connect_three_grid" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lower_dock_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp">
+
+        <include layout="@layout/connect_three_lower_dock" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

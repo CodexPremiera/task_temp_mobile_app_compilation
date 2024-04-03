@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GENERAL -->
+    <dimen name="w_btn">200dp</dimen>
+    <dimen name="h_btn">48dp</dimen>
+    <dimen name="corner_radius_btn">12dp</dimen>
+
+</resources>

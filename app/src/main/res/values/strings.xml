@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mobile_App_Portfolio</string>
+
+    <!-- GENERAL -->
+    <string name="instagram">Instagram</string>
+    <string name="settings">Settings</string>
+    <string name="calculator">calculator</string>
+
+</resources>

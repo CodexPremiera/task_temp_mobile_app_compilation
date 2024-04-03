@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- INSTAGRAM -->
+    <string name="layoutTopTabsDesc">Top tabs</string>
+    <string name="search">Search</string>
+    <string name="instagram_logo_desc">Instagram Logo</string>
+    <string name="notification_icon">Notification Icon</string>
+    <string name="messenger_icon">Messenger Icon</string>
+    <string name="username">Username</string>
+    <string name="three_dot_icon">Three Dot Icon</string>
+    <string name="photo">Photo</string>
+    <string name="heart_icon">Heart Icon</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="comment_icon">Comment Icon</string>
+    <string name="send_icon">Send Icon</string>
+    <string name="react_counts">100,000 Likes</string>
+    <string name="post_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend quis ante non accumsan. Nulla vehicula ...</string>
+    <string name="comment_count">view all 1000 comments</string>
+</resources>

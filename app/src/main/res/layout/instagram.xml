@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app01_instagram.InstagramActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TOP TOOLBAR -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1">
+
+            <include
+                layout="@layout/instagram_header_bar"/>
+
+        </RelativeLayout>
+
+        <!-- MIDDLE SECTION -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relativeLayout1"
+            android:layout_marginTop="0dp">
+
+            <include layout="@layout/instagram_home_feed" />
+
+        </RelativeLayout>
+
+        <!-- BOTTOM NAVIGATION -->
+        <!--<include layout="@layout/layout_bottom_navigation"/>-->
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

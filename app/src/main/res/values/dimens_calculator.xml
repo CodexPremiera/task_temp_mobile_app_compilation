@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--CALCULATOR -->
+    <dimen name="btn_gap">7dp</dimen>
+    <dimen name="btn_xGap">7dp</dimen>
+    <dimen name="btn_yGap">10dp</dimen>
+    <dimen name="btn_size">70dp</dimen>
+    <dimen name="num_size">21sp</dimen>
+    <dimen name="sign_size">28sp</dimen>
+
+    <dimen name="btn_xGap_ls">6dp</dimen>
+    <dimen name="btn_yGap_ls">3dp</dimen>
+    <dimen name="btn_width_ls">84dp</dimen>
+    <dimen name="btn_height_ls">48dp</dimen>
+    <dimen name="num_size_ls">14sp</dimen>
+    <dimen name="sign_size_ls">20sp</dimen>
+</resources>

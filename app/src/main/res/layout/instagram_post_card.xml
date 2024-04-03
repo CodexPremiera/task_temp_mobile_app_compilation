@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="24dp">
+
+        <!-- TOP INFORMATION BAR -->
+        <RelativeLayout
+            android:id="@+id/top_information_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/photo_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ig_icon_profile"
+                android:contentDescription="@string/notification_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/photo_profile"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"
+                android:text="@string/username"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/three_dot_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:adjustViewBounds="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ig_icon_three_dots"
+                android:contentDescription="@string/three_dot_icon" />
+        </RelativeLayout>
+
+        <!-- PHOTO SECTION -->
+        <RelativeLayout
+            android:id="@+id/photo_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_information_bar">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ig_icon_profile"
+                android:contentDescription="@string/photo" />
+
+        </RelativeLayout>
+
+        <!-- REACTION SECTION -->
+        <RelativeLayout
+            android:id="@+id/reaction_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo_section">
+
+            <!-- REACTION CONTROL BUTTONS -->
+            <RelativeLayout
+                android:id="@+id/reaction_controls"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/heart_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ig_icon_heart"
+                    android:contentDescription="@string/heart_icon"/>
+
+                <ImageView
+                    android:id="@+id/comment_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/heart_icon"
+                    android:layout_marginEnd="16dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ig_icon_comment"
+                    android:contentDescription="@string/comment_icon"/>
+
+                <ImageView
+                    android:id="@+id/send_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/comment_icon"
+                    android:layout_marginEnd="16dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ig_icon_send"
+                    android:contentDescription="@string/send_icon"/>
+
+                <ImageView
+                    android:id="@+id/bookmark_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ig_icon_bookmark"
+                    android:contentDescription="@string/bookmark" />
+            </RelativeLayout>
+
+            <!-- DESCRIPTION, REACTS, AND COMMENTS -->
+            <TextView
+                android:id="@+id/react_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reaction_controls"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerVertical="true"
+                android:text="@string/react_counts"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/post_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/react_counts"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerVertical="true"
+                android:text="@string/post_description"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_description"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerVertical="true"
+                android:text="@string/comment_count"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ig_white_gray_border_tabs">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <!-- Instagram Logo aligned to the left -->
+
+            <ImageView
+                android:id="@+id/tab_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ig_logo_instagram"
+                android:contentDescription="@string/instagram_logo_desc" />
+
+            <!-- Heart Icon aligned to the right -->
+
+            <ImageView
+                android:id="@+id/message_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ig_icon_messenger"
+                android:contentDescription="@string/messenger_icon" />
+
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:adjustViewBounds="true"
+                android:layout_toStartOf="@+id/message_icon"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ig_icon_heart"
+                android:contentDescription="@string/notification_icon"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>
+
+
+
