@@ -34,8 +34,8 @@ public class ConnectThreeActivity extends AppCompatActivity {
         int player1Color = ContextCompat.getColor(this, R.color.button_blue);
         int player2Color = ContextCompat.getColor(this, R.color.button_orange);
 
-        Drawable player1Button = ContextCompat.getDrawable(this, R.drawable.player1_button);
-        Drawable player2Button = ContextCompat.getDrawable(this, R.drawable.player2_button);
+        Drawable player1Button = ContextCompat.getDrawable(this, R.drawable.connect_three_player1_button);
+        Drawable player2Button = ContextCompat.getDrawable(this, R.drawable.connect_three_player2_button);
 
         player1 = new Player("Player 1", player1Button, player1Color);
         player2 = new Player("Player 2", player2Button, player2Color);

@@ -13,18 +13,18 @@
             android:layout_height="@dimen/w_top_dock"
             android:layout_marginHorizontal="@dimen/mx_top_dock"
             android:layout_marginVertical="@dimen/my_top_dock"
-            android:background="@drawable/dock">
+            android:background="@drawable/connect_three_dock">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/dock_shadow"
+                android:src="@drawable/connect_three_dock_shadow"
                 android:contentDescription="@string/top_left_dock" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/dock"
+                android:background="@drawable/connect_three_dock"
                 android:layout_marginBottom="@dimen/elevation_top_dock" >
 
                 <LinearLayout
@@ -64,18 +64,18 @@
             android:layout_height="@dimen/w_top_dock"
             android:layout_marginHorizontal="@dimen/mx_top_dock"
             android:layout_marginVertical="@dimen/my_top_dock"
-            android:background="@drawable/dock">
+            android:background="@drawable/connect_three_dock">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/dock_shadow"
+                android:src="@drawable/connect_three_dock_shadow"
                 android:contentDescription="@string/top_center_dock" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/dock"
+                android:background="@drawable/connect_three_dock"
                 android:layout_marginBottom="@dimen/elevation_top_dock">
 
                 <TextView
@@ -95,18 +95,18 @@
             android:layout_height="@dimen/w_top_dock"
             android:layout_marginHorizontal="@dimen/mx_top_dock"
             android:layout_marginVertical="@dimen/my_top_dock"
-            android:background="@drawable/dock">
+            android:background="@drawable/connect_three_dock">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/dock_shadow"
+                android:src="@drawable/connect_three_dock_shadow"
                 android:contentDescription="@string/top_right_dock" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/dock"
+                android:background="@drawable/connect_three_dock"
                 android:id="@+id/btn_reset"
                 android:layout_marginBottom="@dimen/elevation_top_dock" >
 

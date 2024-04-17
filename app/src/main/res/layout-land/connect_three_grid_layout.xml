@@ -23,7 +23,7 @@
                     android:id="@+id/cellA1"
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -38,7 +38,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -53,7 +53,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -68,7 +68,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -83,7 +83,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -105,7 +105,7 @@
                     android:clickable="true"
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -120,7 +120,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -135,7 +135,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -150,7 +150,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -165,7 +165,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -186,7 +186,7 @@
                     android:id="@+id/cellC1"
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -201,7 +201,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -216,7 +216,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -231,7 +231,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -246,7 +246,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -267,7 +267,7 @@
                     android:id="@+id/cellD1"
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -282,7 +282,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -297,7 +297,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -312,7 +312,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -327,7 +327,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
@@ -348,7 +348,7 @@
                     android:id="@+id/cellE1"
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -363,7 +363,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -378,7 +378,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -393,7 +393,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
 
@@ -408,7 +408,7 @@
                     android:layout_marginHorizontal="@dimen/mx_cell_land"
                     android:layout_marginVertical="@dimen/my_cell_land"
                     android:clickable="false"
-                    android:background="@drawable/cell_button"
+                    android:background="@drawable/connect_three_cell_button"
                     android:radius="@dimen/cell_corner_radius"/>
             </RelativeLayout>
         </LinearLayout>
