@@ -40,7 +40,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp">
 
-        <include layout="@layout/lower_dock_layout" />
+        <include layout="@layout/connect_three_lower_dock_layout" />
 
     </RelativeLayout>
 
