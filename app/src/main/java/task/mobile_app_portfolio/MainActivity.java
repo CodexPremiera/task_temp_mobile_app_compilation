@@ -12,13 +12,14 @@ import java.util.Objects;
 import task.mobile_app_portfolio.app01_instagram.InstagramActivity;
 import task.mobile_app_portfolio.app02_settings.SettingsActivity;
 import task.mobile_app_portfolio.app03_calculator.CalculatorActivity;
+import task.mobile_app_portfolio.app05_connect_three.ConnectThreeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_home);
 
         // remove the action bar
         Objects.requireNonNull(getSupportActionBar()).hide();
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         MaterialButton btn_calculator = (MaterialButton) findViewById(R.id.btn_calculator);
         btn_calculator.setOnClickListener(view -> openCalculator());
+
+        MaterialButton btn_connect_three = (MaterialButton) findViewById(R.id.btn_connect_three);
+        btn_connect_three.setOnClickListener(view -> openConnectThree());
     }
 
     public void openInstagram() {
@@ -48,4 +52,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openConnectThree() {
+        Intent intent = new Intent(this, ConnectThreeActivity.class);
+        startActivity(intent);
+    }
 }

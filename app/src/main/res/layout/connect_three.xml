@@ -5,7 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".app05_connect_three.ConnectThreeActivity">
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".MainActivity"
+    android:background="@color/button_white">
 
     <RelativeLayout
         android:id="@+id/top_dock_layout"
@@ -15,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp">
 
-        <include layout="@layout/connect_three_top_dock" />
+        <include layout="@layout/connect_three_top_dock_layout" />
 
     </RelativeLayout>
 
@@ -25,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
-        <include layout="@layout/connect_three_grid" />
+        <include layout="@layout/connect_three_grid_layout" />
 
     </RelativeLayout>
 
@@ -37,7 +40,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp">
 
-        <include layout="@layout/connect_three_lower_dock" />
+        <include layout="@layout/lower_dock_layout" />
 
     </RelativeLayout>
 
