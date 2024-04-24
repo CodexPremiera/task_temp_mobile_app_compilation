@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app06_passing_intents.IntentsActivity"
+    android:background="@color/intents_bg_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_field"
+                android:layout_height="@dimen/h_field"
+                android:layout_margin="@dimen/m_field"
+                android:background="@drawable/passing_intents_field_shadow"
+                android:elevation="@dimen/elevation_field"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_field"
+                    android:layout_height="@dimen/h_field"
+                    android:background="@drawable/passing_intents_field_box"
+                    android:paddingHorizontal="@dimen/px_field"
+                    android:paddingTop="@dimen/pt_field"
+                    android:paddingBottom="@dimen/py_field">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/product_sans_medium"
+                        android:text="@string/intents_firstname"
+                        android:textColor="@color/intents_text_black"
+                        android:textSize="@dimen/font_field_label"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/field_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:autofillHints="firstname"
+                        android:background="@drawable/passing_intents_field_underline"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:hint="@string/intents_firstname_hint"
+                        android:inputType="text"
+                        android:paddingBottom="@dimen/leading_field"
+                        android:textColor="@color/intents_text_gray"
+                        android:textSize="@dimen/font_field" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_field"
+                android:layout_height="@dimen/h_field"
+                android:layout_margin="@dimen/m_field"
+                android:background="@drawable/passing_intents_field_shadow"
+                android:elevation="@dimen/elevation_field"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_field"
+                    android:layout_height="@dimen/h_field"
+                    android:background="@drawable/passing_intents_field_box"
+                    android:paddingHorizontal="@dimen/px_field"
+                    android:paddingTop="@dimen/pt_field"
+                    android:paddingBottom="@dimen/py_field">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/product_sans_medium"
+                        android:text="@string/intents_lastname"
+                        android:textColor="@color/intents_text_black"
+                        android:textSize="@dimen/font_field_label"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/field_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:autofillHints="firstname"
+                        android:background="@drawable/passing_intents_field_underline"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:hint="@string/intents_lastname_hint"
+                        android:inputType="text"
+                        android:paddingBottom="@dimen/leading_field"
+                        android:textColor="@color/intents_text_gray"
+                        android:textSize="@dimen/font_field" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_field"
+                android:layout_height="@dimen/h_field"
+                android:layout_margin="@dimen/m_field"
+                android:background="@drawable/passing_intents_field_shadow"
+                android:elevation="@dimen/elevation_field"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_field"
+                    android:layout_height="@dimen/h_field"
+                    android:background="@drawable/passing_intents_field_box"
+                    android:paddingHorizontal="@dimen/px_field"
+                    android:paddingTop="@dimen/pt_field"
+                    android:paddingBottom="@dimen/py_field">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/product_sans_medium"
+                        android:text="@string/intents_birthdate"
+                        android:textColor="@color/intents_text_black"
+                        android:textSize="@dimen/font_field_label"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/field_birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:autofillHints="firstname"
+                        android:background="@drawable/passing_intents_field_underline"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:hint="@string/intents_birthdate_hint"
+                        android:inputType="text"
+                        android:paddingBottom="@dimen/leading_field"
+                        android:textColor="@color/intents_text_gray"
+                        android:textSize="@dimen/font_field" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_field"
+                android:layout_height="@dimen/h_field"
+                android:layout_margin="@dimen/m_field"
+                android:background="@drawable/passing_intents_field_shadow"
+                android:elevation="@dimen/elevation_field"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_field"
+                    android:layout_height="@dimen/h_field"
+                    android:background="@drawable/passing_intents_field_box"
+                    android:paddingHorizontal="@dimen/px_field"
+                    android:paddingTop="@dimen/pt_field"
+                    android:paddingBottom="@dimen/py_field">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/product_sans_medium"
+                        android:text="@string/intents_mobile"
+                        android:textColor="@color/intents_text_black"
+                        android:textSize="@dimen/font_field_label"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/field_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:autofillHints="firstname"
+                        android:background="@drawable/passing_intents_field_underline"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:hint="@string/intents_mobile_hint"
+                        android:inputType="text"
+                        android:paddingBottom="@dimen/leading_field"
+                        android:textColor="@color/intents_text_gray"
+                        android:textSize="@dimen/font_field" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/w_field"
+                android:layout_height="@dimen/h_field"
+                android:layout_margin="@dimen/m_field"
+                android:background="@drawable/passing_intents_field_shadow"
+                android:elevation="@dimen/elevation_field"
+                tools:ignore="UselessParent">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/w_field"
+                    android:layout_height="@dimen/h_field"
+                    android:background="@drawable/passing_intents_field_box"
+                    android:paddingHorizontal="@dimen/px_field"
+                    android:paddingTop="@dimen/pt_field"
+                    android:paddingBottom="@dimen/py_field">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/product_sans_medium"
+                        android:text="@string/intents_mobile"
+                        android:textColor="@color/intents_text_black"
+                        android:textSize="@dimen/font_field_label"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/field_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:autofillHints="firstname"
+                        android:background="@drawable/passing_intents_field_underline"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:hint="@string/intents_mobile_hint"
+                        android:inputType="text"
+                        android:paddingBottom="@dimen/leading_field"
+                        android:textColor="@color/intents_text_gray"
+                        android:textSize="@dimen/font_field" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="@dimen/intents_w_btn"
+        android:layout_height="@dimen/intents_h_btn"
+        android:id="@+id/intents_submit_button"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/black"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="10dp"
+        android:text="SUBMIT"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/product_sans_medium"
+        app:cornerRadius="@dimen/radius_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

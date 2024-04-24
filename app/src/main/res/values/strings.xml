@@ -7,5 +7,6 @@
     <string name="calculator">calculator</string>
     <string name="midterm">midterm</string>
     <string name="connect_three">connect three</string>
+    <string name="passing_intents">passing intents</string>
 
 </resources>

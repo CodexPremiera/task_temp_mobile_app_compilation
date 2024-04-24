@@ -38,6 +38,10 @@
             android:name=".app05_connect_three.ConnectThreeActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".app06_passing_intents.IntentsActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

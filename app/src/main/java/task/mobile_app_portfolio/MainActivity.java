@@ -13,6 +13,7 @@ import task.mobile_app_portfolio.app01_instagram.InstagramActivity;
 import task.mobile_app_portfolio.app02_settings.SettingsActivity;
 import task.mobile_app_portfolio.app03_calculator.CalculatorActivity;
 import task.mobile_app_portfolio.app05_connect_three.ConnectThreeActivity;
+import task.mobile_app_portfolio.app06_passing_intents.IntentsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         MaterialButton btn_connect_three = (MaterialButton) findViewById(R.id.btn_connect_three);
         btn_connect_three.setOnClickListener(view -> openConnectThree());
+
+        MaterialButton btn_passing_intents = (MaterialButton) findViewById(R.id.btn_passing_intents);
+        btn_passing_intents.setOnClickListener(view -> openPassingIntents());
     }
 
     public void openInstagram() {
@@ -54,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openConnectThree() {
         Intent intent = new Intent(this, ConnectThreeActivity.class);
+        startActivity(intent);
+    }
+
+    public void openPassingIntents() {
+        Intent intent = new Intent(this, IntentsActivity.class);
         startActivity(intent);
     }
 }
