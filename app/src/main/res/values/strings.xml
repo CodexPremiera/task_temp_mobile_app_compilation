@@ -8,5 +8,6 @@
     <string name="midterm">midterm</string>
     <string name="connect_three">connect three</string>
     <string name="passing_intents">passing intents</string>
+    <string name="menu">menu</string>
 
 </resources>

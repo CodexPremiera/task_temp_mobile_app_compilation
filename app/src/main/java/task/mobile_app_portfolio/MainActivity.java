@@ -14,6 +14,7 @@ import task.mobile_app_portfolio.app02_settings.SettingsActivity;
 import task.mobile_app_portfolio.app03_calculator.CalculatorActivity;
 import task.mobile_app_portfolio.app05_connect_three.ConnectThreeActivity;
 import task.mobile_app_portfolio.app06_passing_intents.IntentsActivity;
+import task.mobile_app_portfolio.app07_menu_items.MenuActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
         MaterialButton btn_passing_intents = (MaterialButton) findViewById(R.id.btn_passing_intents);
         btn_passing_intents.setOnClickListener(view -> openPassingIntents());
+
+        MaterialButton btn_menu = (MaterialButton) findViewById(R.id.btn_menu);
+        btn_menu.setOnClickListener(view -> openMenu());
     }
 
     public void openInstagram() {
@@ -63,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openPassingIntents() {
         Intent intent = new Intent(this, IntentsActivity.class);
+        startActivity(intent);
+    }
+
+    public void openMenu() {
+        Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }
 }

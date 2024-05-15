@@ -110,6 +110,22 @@
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_menu"
+                android:layout_width="@dimen/w_btn"
+                android:layout_height="@dimen/h_btn"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:backgroundTint="@color/black"
+                app:cornerRadius="@dimen/corner_radius_btn"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="10dp"
+                android:text="@string/menu"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
         </LinearLayout>
 
 

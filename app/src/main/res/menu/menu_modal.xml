@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mItemChange"
+        android:title="Change">
+        <menu>
+            <item
+                android:id="@+id/mItemChangeSize"
+                android:title="Change Size" />
+            <item
+                android:id="@+id/mItemChangeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Change Color" />
+            <item
+                android:id="@+id/mItemChangeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Change Icon" />
+            <item
+                android:id="@+id/mItemChangeVisibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Change Visibility" />
+            <item
+                android:id="@+id/mItemChangeButtonState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Change Clickable" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mItemReset"
+        android:title="Reset" />
+    <item
+        android:id="@+id/mItemExit"
+        android:title="Exit" />
+</menu>
