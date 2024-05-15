@@ -1,0 +1,28 @@
+<resources>
+    <string name="student_register">Student Register</string>
+    <string name="intents_registration_instruction">Please enter your details to continue</string>
+    <string name="intents_agree_to_terms">Yes, I agree to the</string>
+    <string name="intents_terms_of_service"><u>Terms of Service</u></string>
+
+    <string name="intents_firstname_hint">Firstname</string>
+    <string name="intents_lastname_hint">Lastname</string>
+    <string name="intents_birthdate_hint">Birthdate</string>
+    <string name="intents_gender_hint">Gender</string>
+    <string name="intents_email_hint">Email</string>
+    <string name="intents_mobile_hint">Mobile No.</string>
+    <string name="intents_gender_male">male</string>
+    <string name="intents_gender_female">female</string>
+    <string name="intents_gender_others">other</string>
+
+
+    <string name="intents_id_hint">ID Number</string>
+    <string name="intents_course_hint">Course</string>
+    <string name="intents_year_hint">Year Level</string>
+    <string name="intents_unit_hint">Total Units</string>
+    <string name="intents_gpa_hint">GPA</string>
+    <string name="intents_clear">Clear</string>
+    <string name="intents_submit">Submit</string>
+    <string name="intents_greeting">Hello, my friend!</string>
+    <string name="intents_profile_Summary">The following is the summary of your profile.</string>
+    <string name="intents_return">return</string>
+</resources>

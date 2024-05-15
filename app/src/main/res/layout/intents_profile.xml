@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".ProfileActivity"
+    android:background="@color/intents_dark_blue"
+    android:paddingVertical="@dimen/intents_page_y_pad"
+    android:paddingHorizontal="@dimen/intents_page_x_pad">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/intents_page_gap">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intents_greeting"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="28sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/intents_profile_Summary"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:alpha="0.6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_firstname_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_firstname_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_lastname_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_lastname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_lastname_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_gender_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_firstname_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_birthdate_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_birthdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_birthdate_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_email_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_email_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_mobile_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_mobile_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_id_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_id_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_course_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_course"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_course_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_year_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_year_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_unit_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_units"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_unit_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/intents_profile_gap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_gpa_hint"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_profile_label"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profile_gpa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/intents_gpa_hint"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_profile_field"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/intents_page_gap">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_return"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="@dimen/intents_field_pad"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/intents_button_submit"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="@string/intents_return"
+                android:textColor="@color/intents_field_hint"
+                android:textColorHint="@color/intents_field_hint"
+                android:textSize="@dimen/intents_font_profile_field"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

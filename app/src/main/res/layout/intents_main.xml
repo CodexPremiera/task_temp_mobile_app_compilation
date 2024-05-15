@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".app06_passing_intents.IntentsActivity"
+    android:background="@color/intents_dark_blue"
+    android:paddingVertical="@dimen/intents_page_y_pad"
+    android:paddingHorizontal="@dimen/intents_page_x_pad">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/student_register"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/intents_page_gap"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/intents_registration_instruction"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:alpha="0.6"
+                android:layout_marginBottom="@dimen/intents_registration_gap"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/intents_form_gap">
+
+                    <EditText
+                        android:id="@+id/field_firstname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingVertical="@dimen/intents_field_pad"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/intents_field_box"
+                        android:hint="@string/intents_firstname_hint"
+                        android:autofillHints="firstname"
+                        android:inputType="text"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+
+                    <EditText
+                        android:id="@+id/field_lastname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingVertical="@dimen/intents_field_pad"
+                        android:paddingHorizontal="16dp"
+                        android:layout_marginStart="@dimen/intents_form_gap"
+                        android:background="@drawable/intents_field_box"
+                        android:hint="@string/intents_lastname_hint"
+                        android:autofillHints="lastname"
+                        android:inputType="text"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/field_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/intents_form_gap"
+                    android:paddingVertical="@dimen/intents_field_pad"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/intents_field_box">
+
+
+                    <RadioButton
+                        android:id="@+id/field_gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:text="@string/intents_gender_male"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+
+                    <RadioButton
+                        android:id="@+id/field_gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:text="@string/intents_gender_female"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+
+                    <RadioButton
+                        android:id="@+id/field_gender_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:text="@string/intents_gender_others"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+
+                    <!-- Add more RadioButton elements here if needed -->
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/field_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/intents_field_pad"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="@dimen/intents_form_gap"
+                    android:background="@drawable/intents_field_box"
+                    android:hint="@string/intents_birthdate_hint"
+                    android:autofillHints="birthdate"
+                    android:inputType="date"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/intents_field_hint"
+                    android:textColorHint="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_field"/>
+
+                <EditText
+                    android:id="@+id/field_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/intents_field_pad"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="@dimen/intents_form_gap"
+                    android:background="@drawable/intents_field_box"
+                    android:hint="@string/intents_email_hint"
+                    android:autofillHints="emailAddress"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/intents_field_hint"
+                    android:textColorHint="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_field"/>
+
+                <EditText
+                    android:id="@+id/field_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/intents_field_pad"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="@dimen/intents_form_gap"
+                    android:background="@drawable/intents_field_box"
+                    android:hint="@string/intents_mobile_hint"
+                    android:autofillHints="phone"
+                    android:inputType="phone"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/intents_field_hint"
+                    android:textColorHint="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_field"/>
+
+                <EditText
+                    android:id="@+id/field_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/intents_field_pad"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginBottom="@dimen/intents_form_gap"
+                    android:background="@drawable/intents_field_box"
+                    android:hint="@string/intents_id_hint"
+                    android:autofillHints="idNumber"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/intents_field_hint"
+                    android:textColorHint="@color/intents_field_hint"
+                    android:textSize="@dimen/intents_font_field"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/intents_form_gap">
+
+                    <EditText
+                        android:id="@+id/field_course"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingVertical="@dimen/intents_field_pad"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/intents_field_box"
+                        android:hint="@string/intents_course_hint"
+                        android:autofillHints="course"
+                        android:inputType="text"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+
+                    <EditText
+                        android:id="@+id/field_year_level"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingVertical="@dimen/intents_field_pad"
+                        android:paddingHorizontal="16dp"
+                        android:layout_marginStart="@dimen/intents_form_gap"
+                        android:background="@drawable/intents_field_box"
+                        android:hint="@string/intents_year_hint"
+                        android:autofillHints="lastname"
+                        android:inputType="text"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/intents_form_gap">
+
+                    <EditText
+                        android:id="@+id/field_units"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingVertical="@dimen/intents_field_pad"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/intents_field_box"
+                        android:hint="@string/intents_unit_hint"
+                        android:autofillHints="total_units"
+                        android:inputType="number"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+
+                    <EditText
+                        android:id="@+id/field_gpa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingVertical="@dimen/intents_field_pad"
+                        android:paddingHorizontal="16dp"
+                        android:layout_marginStart="@dimen/intents_form_gap"
+                        android:background="@drawable/intents_field_box"
+                        android:hint="@string/intents_gpa_hint"
+                        android:autofillHints="total_units"
+                        android:inputType="numberDecimal"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/intents_field_hint"
+                        android:textColorHint="@color/intents_field_hint"
+                        android:textSize="@dimen/intents_font_field"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.6">
+
+                    <CheckBox
+                        android:id="@+id/agree_to_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_agree_to_terms"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:buttonTint="@color/intents_field_hint"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intents_terms_of_service"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="3dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/intents_page_gap">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="@dimen/intents_field_pad"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/intents_button_clear"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/intents_clear"
+                android:textColor="@color/intents_field_hint"
+                android:textColorHint="@color/intents_field_hint"
+                android:textSize="@dimen/intents_font_field"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="@dimen/intents_field_pad"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="@dimen/intents_form_gap"
+                android:background="@drawable/intents_button_submit"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="@string/intents_submit"
+                android:textColor="@color/intents_field_hint"
+                android:textColorHint="@color/intents_field_hint"
+                android:textSize="@dimen/intents_font_field"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

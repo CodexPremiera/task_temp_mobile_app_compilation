@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="intents_dark_blue">#0A3E52</color>
+    <color name="intents_orange">#E26B3D</color>
+    <color name="intents_field_box">#1AFFFFFF</color>
+    <color name="intents_field_hint">#B8FFFFFF</color>
+    <color name="intents_field_text">#FFFFFFFF</color>
+</resources>
